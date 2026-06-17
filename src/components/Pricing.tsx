@@ -17,8 +17,10 @@ export default function Pricing() {
   const boxes = Math.ceil(volume / 500);
 
   return (
-    <section id="pricing" className="py-24 bg-brand-cream text-brand-charcoal relative">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(226,158,37,0.04),transparent_40%)] pointer-events-none" />
+    <section id="pricing" className="py-24 bg-brand-cream/40 text-brand-charcoal relative overflow-hidden">
+      {/* Background glow blobs */}
+      <div className="absolute top-1/4 left-1/4 w-[450px] h-[450px] bg-brand-honey/5 rounded-full blur-[140px] pointer-events-none" />
+      <div className="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-brand-gold/10 rounded-full blur-[160px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -47,10 +49,10 @@ export default function Pricing() {
             ].map((t, idx) => (
               <div
                 key={idx}
-                className={`p-6 rounded-xl border transition-all duration-300 ${
+                className={`p-6 rounded-xl glass-card-hover ${
                   t.recommended
-                    ? "bg-brand-white/70 backdrop-blur-md border-2 border-brand-honey shadow-md"
-                    : "bg-brand-white/40 backdrop-blur-md border border-brand-white/20 shadow-sm"
+                    ? "glass-card-honey border-2 border-brand-honey/70"
+                    : "glass-card"
                 } relative overflow-hidden`}
               >
                 {t.recommended && (
@@ -89,7 +91,9 @@ export default function Pricing() {
           </div>
 
           {/* Right: Estimator */}
-          <div className="lg:col-span-7 p-8 rounded-2xl bg-brand-white/50 backdrop-blur-lg border border-brand-white/25 shadow-lg flex flex-col justify-between w-full">
+          <div className="lg:col-span-7 p-8 rounded-2xl glass-card flex flex-col justify-between w-full relative">
+            {/* Direct glow behind the calculator card */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-80 h-80 rounded-full bg-brand-honey/10 blur-[90px] pointer-events-none -z-10" />
             <div>
               <div className="flex items-center gap-2 mb-6">
                 <Sparkles className="w-5 h-5 text-brand-honey" />
@@ -130,7 +134,7 @@ export default function Pricing() {
               </div>
 
               {/* Calc panel */}
-              <div className="grid grid-cols-3 gap-4 p-5 rounded-xl bg-brand-honey-light/50 backdrop-blur-md border border-brand-honey/15 mb-8">
+              <div className="grid grid-cols-3 gap-4 p-5 rounded-xl glass-card-honey mb-8">
                 <div className="text-center">
                   <p className="text-[10px] text-brand-charcoal/60 font-bold uppercase tracking-wider mb-1">
                     Rate / Sachet

@@ -24,7 +24,10 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section id="why-us" className="py-24 bg-brand-white text-brand-charcoal relative">
+    <section id="why-us" className="py-24 bg-brand-cream/30 text-brand-charcoal relative overflow-hidden font-sans">
+      {/* Background glow blobs */}
+      <div className="absolute top-1/4 right-1/4 w-[400px] h-[400px] bg-brand-honey/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/4 left-1/3 w-[350px] h-[350px] bg-brand-gold/8 rounded-full blur-[100px] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs font-semibold tracking-widest text-brand-honey uppercase mb-3 block">
@@ -48,7 +51,7 @@ export default function WhyChooseUs() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="flex gap-4 p-5 rounded-2xl bg-brand-white/40 backdrop-blur-md border border-brand-white/20 hover:border-brand-honey/30 hover:bg-brand-white/60 transition-all duration-300 shadow-sm"
+                className="flex gap-4 p-5 rounded-2xl glass-card glass-card-hover"
               >
                 <div className="p-3 rounded-xl bg-brand-honey-light/70 text-brand-honey shrink-0 h-fit">
                   {benefit.icon}
@@ -70,7 +73,7 @@ export default function WhyChooseUs() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="p-6 rounded-2xl bg-brand-honey-light/50 backdrop-blur-md border border-brand-honey/20 flex gap-4 shadow-sm"
+              className="p-6 rounded-2xl glass-card-honey glass-card-hover flex gap-4"
             >
               <div className="p-3 rounded-xl bg-brand-honey text-brand-white shrink-0 h-fit">
                 <Sparkles className="w-6 h-6" />

@@ -30,7 +30,7 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-brand-white/70 backdrop-blur-lg border-b border-brand-white/20 py-3 shadow-sm"
+          ? "bg-brand-white/45 backdrop-blur-md border-b border-brand-white/30 py-3 shadow-sm"
           : "bg-transparent py-5"
       }`}
     >
@@ -113,7 +113,7 @@ export default function Header() {
 
       {/* Mobile Drawer */}
       {isOpen && (
-        <div className="md:hidden bg-brand-white/95 backdrop-blur-lg border-b border-brand-white/20 py-4 px-6 absolute top-full left-0 right-0 shadow-lg flex flex-col gap-4">
+        <div className="md:hidden bg-brand-white/85 backdrop-blur-xl border-b border-brand-white/35 py-4 px-6 absolute top-full left-0 right-0 shadow-lg flex flex-col gap-4">
           {navLinks.map((link) => (
             <a
               key={link.name}

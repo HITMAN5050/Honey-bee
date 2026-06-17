@@ -109,7 +109,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
         />
       </head>
-      <body className="min-h-full flex flex-col bg-brand-charcoal text-brand-cream selection:bg-brand-gold selection:text-brand-charcoal">
+      <body className="min-h-full flex flex-col bg-brand-cream text-brand-charcoal selection:bg-brand-gold selection:text-brand-charcoal">
         {children}
       </body>
     </html>

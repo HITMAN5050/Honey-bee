@@ -20,7 +20,9 @@ export default function Founders() {
   ];
 
   return (
-    <section id="founders" className="py-24 bg-brand-white text-brand-charcoal relative">
+    <section id="founders" className="py-24 bg-brand-cream/30 text-brand-charcoal relative overflow-hidden">
+      {/* Background glow blobs */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand-honey/5 rounded-full blur-[150px] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-xs font-semibold tracking-widest text-brand-honey uppercase mb-3 block">
@@ -42,7 +44,7 @@ export default function Founders() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.15 }}
-              className="flex flex-col items-center text-center p-6 rounded-2xl bg-brand-white/50 backdrop-blur-md border border-brand-white/20 shadow-sm"
+              className="flex flex-col items-center text-center p-6 rounded-2xl glass-card glass-card-hover"
             >
               {/* Photo */}
               <div className="relative w-48 h-48 rounded-full overflow-hidden mb-6 border-2 border-brand-honey/40 shadow-sm">

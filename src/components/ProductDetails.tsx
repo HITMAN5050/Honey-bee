@@ -33,7 +33,10 @@ export default function ProductDetails() {
   ];
 
   return (
-    <section id="product-details" className="py-24 bg-brand-cream text-brand-charcoal relative">
+    <section id="product-details" className="py-24 bg-brand-cream/40 text-brand-charcoal relative overflow-hidden">
+      {/* Background glow blobs */}
+      <div className="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-brand-honey/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/3 right-1/4 w-[450px] h-[450px] bg-brand-gold/10 rounded-full blur-[140px] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left: Product macro shot */}
@@ -83,7 +86,7 @@ export default function ProductDetails() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="p-5 rounded-xl bg-brand-white/40 backdrop-blur-md border border-brand-white/20 flex flex-col items-start shadow-sm hover:bg-brand-white/60 transition-all duration-300"
+                  className="p-5 rounded-xl glass-card glass-card-hover flex flex-col items-start"
                 >
                   <div className="p-2.5 rounded-lg bg-brand-honey-light/70 border border-brand-honey/10 mb-4">
                     {spec.icon}
@@ -102,7 +105,7 @@ export default function ProductDetails() {
             </div>
 
             {/* FSSAI Badge placeholder */}
-            <div className="mt-8 flex items-center gap-4 p-4 rounded-xl border border-dashed border-brand-honey/20 bg-brand-honey-light/30 backdrop-blur-md">
+            <div className="mt-8 flex items-center gap-4 p-4 rounded-xl border border-dashed border-brand-honey/35 bg-brand-honey-light/35 backdrop-blur-lg shadow-sm">
               <div className="w-12 h-12 rounded bg-brand-honey/10 border border-brand-honey/20 flex items-center justify-center text-[10px] font-bold text-brand-honey uppercase tracking-tight text-center shrink-0">
                 FSSAI
               </div>

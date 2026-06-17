@@ -35,7 +35,10 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="py-24 bg-brand-cream text-brand-charcoal relative">
+    <section id="faq" className="py-24 bg-brand-cream/40 text-brand-charcoal relative overflow-hidden">
+      {/* Background glow blobs */}
+      <div className="absolute top-1/3 left-1/4 w-[400px] h-[400px] bg-brand-honey/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-1/3 right-1/4 w-[450px] h-[450px] bg-brand-gold/8 rounded-full blur-[130px] pointer-events-none" />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="text-xs font-semibold tracking-widest text-brand-honey uppercase mb-3 block">
@@ -55,7 +58,7 @@ export default function FAQ() {
             return (
               <div
                 key={index}
-                className="border border-brand-white/20 bg-brand-white/50 backdrop-blur-md rounded-xl overflow-hidden shadow-sm"
+                className="glass-card glass-card-hover rounded-xl overflow-hidden"
               >
                 <button
                   onClick={() => toggleFAQ(index)}

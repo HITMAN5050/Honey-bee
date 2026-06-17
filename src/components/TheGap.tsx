@@ -5,9 +5,12 @@ import { Check, X } from "lucide-react";
 
 export default function TheGap() {
   return (
-    <section id="the-gap" className="py-24 bg-brand-white text-brand-charcoal relative font-sans">
+    <section id="the-gap" className="py-24 bg-brand-cream/30 text-brand-charcoal relative font-sans overflow-hidden">
       {/* Subtle organic background grid */}
       <div className="absolute inset-0 opacity-[0.015] pointer-events-none bg-[radial-gradient(#1E1A16_1px,transparent_1px)] [background-size:16px_16px]" />
+      
+      {/* Glowing background blob */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-brand-honey/5 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -48,7 +51,7 @@ export default function TheGap() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="p-8 rounded-2xl bg-brand-white/40 backdrop-blur-md border border-brand-white/20 flex flex-col justify-between shadow-sm"
+            className="p-8 rounded-2xl glass-card glass-card-hover flex flex-col justify-between"
           >
             <div>
               <div className="w-12 h-12 rounded-full bg-red-100/70 border border-red-200/50 flex items-center justify-center mb-6">
@@ -82,10 +85,10 @@ export default function TheGap() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="p-8 rounded-2xl bg-brand-honey-light/60 backdrop-blur-md border border-brand-honey/15 flex flex-col justify-between shadow-md relative overflow-hidden"
+            className="p-8 rounded-2xl glass-card-honey glass-card-hover flex flex-col justify-between relative overflow-hidden"
           >
             {/* Subtle glow */}
-            <div className="absolute -top-24 -right-24 w-48 h-48 bg-brand-honey/10 rounded-full blur-2xl pointer-events-none" />
+            <div className="absolute -top-24 -right-24 w-48 h-48 bg-brand-honey/15 rounded-full blur-2xl pointer-events-none" />
 
             <div>
               <div className="w-12 h-12 rounded-full bg-brand-honey/10 border border-brand-honey/20 flex items-center justify-center mb-6">

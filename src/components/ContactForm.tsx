@@ -75,7 +75,10 @@ export default function ContactForm() {
   const whatsappUrl = "https://wa.me/919876543210?text=Hi,%20I'd%20like%20to%20know%20more%20about%20Honey%20Bee%20honey%20sachets%20for%20my%20café.";
 
   return (
-    <section id="contact" className="py-24 bg-brand-white text-brand-charcoal relative">
+    <section id="contact" className="py-24 bg-brand-cream/30 text-brand-charcoal relative overflow-hidden font-sans">
+      {/* Background glow blobs */}
+      <div className="absolute top-1/3 left-1/4 w-[450px] h-[450px] bg-brand-honey/5 rounded-full blur-[130px] pointer-events-none" />
+      <div className="absolute bottom-1/3 right-1/4 w-[450px] h-[450px] bg-brand-gold/10 rounded-full blur-[140px] pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 max-w-5xl mx-auto items-stretch">
           
@@ -132,7 +135,9 @@ export default function ContactForm() {
           </div>
 
           {/* Right Column: Lead Form */}
-          <div className="lg:col-span-7 p-8 rounded-2xl bg-brand-cream text-brand-charcoal border border-brand-muted-border shadow-md flex flex-col justify-center">
+          <div className="lg:col-span-7 p-8 rounded-2xl glass-card flex flex-col justify-center relative overflow-hidden">
+            {/* Ambient glow inside the card */}
+            <div className="absolute -bottom-24 -right-24 w-48 h-48 bg-brand-honey/10 rounded-full blur-2xl pointer-events-none" />
             {isSuccess ? (
               <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
@@ -183,9 +188,9 @@ export default function ContactForm() {
                       setFormData({ ...formData, name: e.target.value });
                       if (errors.name) setErrors({ ...errors, name: "" });
                     }}
-                    className={`w-full px-4 py-3 rounded-lg bg-brand-white border ${
-                      errors.name ? "border-red-500" : "border-brand-muted-border"
-                    } text-brand-charcoal font-sans placeholder-brand-charcoal/30 focus:outline-none focus:border-brand-honey text-sm focus:ring-1 focus:ring-brand-honey`}
+                    className={`w-full px-4 py-3 rounded-lg bg-white/45 border ${
+                      errors.name ? "border-red-500" : "border-white/50"
+                    } text-brand-charcoal font-sans placeholder-brand-charcoal/40 focus:outline-none focus:border-brand-honey text-sm focus:ring-1 focus:ring-brand-honey backdrop-blur-sm transition-all focus:bg-white/80 focus:border-brand-honey`}
                     placeholder="Enter your full name"
                   />
                   {errors.name && <p className="text-red-500 text-xs mt-1.5 font-sans">{errors.name}</p>}
@@ -205,9 +210,9 @@ export default function ContactForm() {
                       setFormData({ ...formData, cafeName: e.target.value });
                       if (errors.cafeName) setErrors({ ...errors, cafeName: "" });
                     }}
-                    className={`w-full px-4 py-3 rounded-lg bg-brand-white border ${
-                      errors.cafeName ? "border-red-500" : "border-brand-muted-border"
-                    } text-brand-charcoal font-sans placeholder-brand-charcoal/30 focus:outline-none focus:border-brand-honey text-sm focus:ring-1 focus:ring-brand-honey`}
+                    className={`w-full px-4 py-3 rounded-lg bg-white/45 border ${
+                      errors.cafeName ? "border-red-500" : "border-white/50"
+                    } text-brand-charcoal font-sans placeholder-brand-charcoal/40 focus:outline-none focus:border-brand-honey text-sm focus:ring-1 focus:ring-brand-honey backdrop-blur-sm transition-all focus:bg-white/80 focus:border-brand-honey`}
                     placeholder="e.g. Roastery Coffee House"
                   />
                   {errors.cafeName && <p className="text-red-500 text-xs mt-1.5 font-sans">{errors.cafeName}</p>}
@@ -229,9 +234,9 @@ export default function ContactForm() {
                         setFormData({ ...formData, city: e.target.value });
                         if (errors.city) setErrors({ ...errors, city: "" });
                       }}
-                      className={`w-full px-4 py-3 rounded-lg bg-brand-white border ${
-                        errors.city ? "border-red-500" : "border-brand-muted-border"
-                      } text-brand-charcoal font-sans placeholder-brand-charcoal/30 focus:outline-none focus:border-brand-honey text-sm focus:ring-1 focus:ring-brand-honey`}
+                      className={`w-full px-4 py-3 rounded-lg bg-white/45 border ${
+                        errors.city ? "border-red-500" : "border-white/50"
+                      } text-brand-charcoal font-sans placeholder-brand-charcoal/40 focus:outline-none focus:border-brand-honey text-sm focus:ring-1 focus:ring-brand-honey backdrop-blur-sm transition-all focus:bg-white/80 focus:border-brand-honey`}
                       placeholder="Ahmedabad"
                     />
                     {errors.city && <p className="text-red-500 text-xs mt-1.5 font-sans">{errors.city}</p>}
@@ -251,9 +256,9 @@ export default function ContactForm() {
                         setFormData({ ...formData, phone: e.target.value });
                         if (errors.phone) setErrors({ ...errors, phone: "" });
                       }}
-                      className={`w-full px-4 py-3 rounded-lg bg-brand-white border ${
-                        errors.phone ? "border-red-500" : "border-brand-muted-border"
-                      } text-brand-charcoal font-sans placeholder-brand-charcoal/30 focus:outline-none focus:border-brand-honey text-sm focus:ring-1 focus:ring-brand-honey`}
+                      className={`w-full px-4 py-3 rounded-lg bg-white/45 border ${
+                        errors.phone ? "border-red-500" : "border-white/50"
+                      } text-brand-charcoal font-sans placeholder-brand-charcoal/40 focus:outline-none focus:border-brand-honey text-sm focus:ring-1 focus:ring-brand-honey backdrop-blur-sm transition-all focus:bg-white/80 focus:border-brand-honey`}
                       placeholder="10-digit mobile number"
                     />
                     {errors.phone && <p className="text-red-500 text-xs mt-1.5 font-sans">{errors.phone}</p>}
@@ -269,7 +274,7 @@ export default function ContactForm() {
                     id="monthlyVolume"
                     value={formData.monthlyVolume}
                     onChange={(e) => setFormData({ ...formData, monthlyVolume: e.target.value })}
-                    className="w-full px-4 py-3 rounded-lg bg-brand-white border border-brand-muted-border text-brand-charcoal font-sans focus:outline-none focus:border-brand-honey text-sm cursor-pointer"
+                    className="w-full px-4 py-3 rounded-lg bg-white/45 border border-white/50 text-brand-charcoal font-sans focus:outline-none focus:border-brand-honey text-sm cursor-pointer backdrop-blur-sm transition-all focus:bg-white/80 focus:border-brand-honey"
                   >
                     <option value="" disabled className="text-brand-charcoal">Select estimated volume</option>
                     <option value="Under 500 sachets" className="text-brand-charcoal font-sans">Under 500 sachets / month</option>
