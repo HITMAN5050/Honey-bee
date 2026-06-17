@@ -24,7 +24,7 @@ export default function Header() {
     { name: "FAQ", href: "#faq" },
   ];
 
-  const whatsappUrl = "https://wa.me/919876543210?text=Hi,%20I'd%20like%20to%20know%20more%20about%20Honey%20Bee%20honey%20sachets%20for%20my%20café.";
+  const whatsappUrl = "https://wa.me/919601483320?text=Hi,%20I'd%20like%20to%20know%20more%20about%20Honey%20Bee%20honey%20sachets%20for%20my%20café.";
 
   return (
     <header

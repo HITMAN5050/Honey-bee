@@ -61,7 +61,7 @@ export default function Footer() {
                 Email: <a href="mailto:hello@honeybee.in" className="hover:text-brand-honey">hello@honeybee.in</a>
               </p>
               <p className="text-brand-charcoal/75">
-                Phone: <a href="tel:+919876543210" className="hover:text-brand-honey">+91 98765 43210</a>
+                Phone: <a href="tel:+919601483320" className="hover:text-brand-honey">+91 96014 83320</a>
               </p>
             </div>
           </div>

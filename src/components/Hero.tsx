@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 export default function Hero() {
-  const whatsappUrl = "https://wa.me/919876543210?text=Hi,%20I'd%20like%20to%20know%20more%20about%20Honey%20Bee%20honey%20sachets%20for%20my%20café.";
+  const whatsappUrl = "https://wa.me/919601483320?text=Hi,%20I'd%20like%20to%20know%20more%20about%20Honey%20Bee%20honey%20sachets%20for%20my%20café.";
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden bg-brand-cream">

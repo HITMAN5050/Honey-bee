@@ -26,7 +26,7 @@ export async function POST(request: Request) {
 
     // Success response
     return NextResponse.json(
-      { success: true, message: "Your request has been successfully recorded. Our sales lead Aarav will call you back within 2 hours." },
+      { success: true, message: "Your request has been successfully recorded. Our sales lead Daksh will call you back within 2 hours." },
       { status: 200 }
     );
   } catch (error) {

@@ -72,7 +72,7 @@ export default function ContactForm() {
     }
   };
 
-  const whatsappUrl = "https://wa.me/919876543210?text=Hi,%20I'd%20like%20to%20know%20more%20about%20Honey%20Bee%20honey%20sachets%20for%20my%20café.";
+  const whatsappUrl = "https://wa.me/919601483320?text=Hi,%20I'd%20like%20to%20know%20more%20about%20Honey%20Bee%20honey%20sachets%20for%20my%20café.";
 
   return (
     <section id="contact" className="py-24 bg-brand-cream/30 text-brand-charcoal relative overflow-hidden font-sans">
@@ -104,7 +104,7 @@ export default function ContactForm() {
                     <p className="text-xs text-brand-charcoal/50 font-bold uppercase tracking-wider">
                       Direct Sales Line
                     </p>
-                    <p className="font-bold text-brand-charcoal">+91 98765 43210</p>
+                    <p className="font-bold text-brand-charcoal">+91 96014 83320</p>
                   </div>
                 </div>
 
@@ -151,7 +151,7 @@ export default function ContactForm() {
                   Request Received!
                 </h3>
                 <p className="text-sm text-brand-charcoal/70 max-w-sm mx-auto leading-relaxed font-sans mb-8">
-                  Thank you for your interest in Honey Bee. Our sales co-founder Aarav will call you back on your mobile number within 2 hours to confirm your café delivery address.
+                  Thank you for your interest in Honey Bee. Our co-founder Daksh will call you back on your mobile number within 2 hours to confirm your café delivery address.
                 </p>
                 <button
                   type="button"

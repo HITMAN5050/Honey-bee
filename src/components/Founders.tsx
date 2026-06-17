@@ -6,13 +6,13 @@ import { motion } from "framer-motion";
 export default function Founders() {
   const founders = [
     {
-      name: "Aarav Mehta",
+      name: "Daksh Amalseda",
       role: "Co-Founder, Sourcing & Quality",
       image: "/images/founder_1.png",
       bio: "Over 8 years of experience in agricultural supply chains and FMCG sourcing, ensuring Honey Bee honey is 100% pure and premium.",
     },
     {
-      name: "Riya Patel",
+      name: "Jaimit Pandya",
       role: "Co-Founder, Café Operations",
       image: "/images/founder_2.png",
       bio: "Former operations lead at a major regional café chain, obsessed with solving logistics, waste, and presentation for hospitality partners.",

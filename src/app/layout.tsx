@@ -90,7 +90,7 @@ export default function RootLayout({
       "addressCountry": "IN"
     },
     "url": "https://honeybee.in",
-    "telephone": "+919876543210",
+    "telephone": "+919601483320",
     "priceRange": "₹₹"
   };
 
